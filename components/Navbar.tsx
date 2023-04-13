@@ -55,8 +55,26 @@ const Navbar = () => {
               </div>
             </div>
             <div className='border-b border-gray-300 my-4'>
-              <p>Solving your creative problems</p>
+              <p className='w-[85%] md:w-[90%] py-4'>
+                Solving your creative problems
+              </p>
             </div>
+          </div>
+          <div className='py-4 flex flex-col'>
+            <ul className='uppercase'>
+              <li className='py-4 text-sm'>
+                <Link href={'/'}>Home</Link>
+              </li>
+              <li className='py-4 text-sm'>
+                <Link href={'/'}>Services</Link>
+              </li>
+              <li className='py-4 text-sm'>
+                <Link href={'/'}>Work</Link>
+              </li>
+              <li className='py-4 text-sm'>
+                <Link href={'/'}>Contact</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
