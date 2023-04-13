@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
 
+import coach from '../public/services/coach.png';
 import design from '../public/services/design.png';
 import development from '../public/services/development.png';
 import event from '../public/services/event.png';
-import writing from '../public/services/writing.png';
+import marketing from '../public/services/marketing.png';
 import search from '../public/services/search.png';
 import social from '../public/services/social.png';
-import marketing from '../public/services/marketing.png';
+import writing from '../public/services/writing.png';
 
 const Services = () => {
   return (
@@ -113,6 +114,17 @@ const Services = () => {
               </div>
               <div className='flex flex-col items-center justify-center'>
                 <h3>Social Media</h3>
+              </div>
+            </div>
+          </div>
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+                <Image src={coach} alt={'Coaching'} width={64} height={64} />
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>Coaching</h3>
+                <p>Coming soon!</p>
               </div>
             </div>
           </div>
