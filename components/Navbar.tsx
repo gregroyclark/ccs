@@ -50,13 +50,13 @@ const Navbar = () => {
               <Link href={'/'}>Home</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href={'#services'}>Services</Link>
+              <Link href={'/#services'}>Services</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href={'#portfolio'}>Portfolio</Link>
+              <Link href={'/#portfolio'}>Portfolio</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href={'#contact'}>Contact</Link>
+              <Link href={'/#contact'}>Contact</Link>
             </li>
           </ul>
           <div onClick={handleNav} className='md:hidden cursor-pointer'>
@@ -78,12 +78,14 @@ const Navbar = () => {
         >
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Image
-                src={logo}
-                alt='Clark Creative Services blue text logo'
-                width={87}
-                height={35}
-              />
+              <Link href={'/'} onClick={handleNav}>
+                <Image
+                  src={logo}
+                  alt='Clark Creative Services blue text logo'
+                  width={87}
+                  height={35}
+                />
+              </Link>
               <div
                 onClick={handleNav}
                 className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
@@ -105,17 +107,17 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className='py-3 text-sm'>
-                <Link onClick={handleNav} href={'#services'}>
+                <Link onClick={handleNav} href={'/#services'}>
                   Services
                 </Link>
               </li>
               <li className='py-3 text-sm'>
-                <Link onClick={handleNav} href={'#portfolio'}>
+                <Link onClick={handleNav} href={'/#portfolio'}>
                   Portfolio
                 </Link>
               </li>
               <li className='py-3 text-sm'>
-                <Link onClick={handleNav} href={'#contact'}>
+                <Link onClick={handleNav} href={'/#contact'}>
                   Contact
                 </Link>
               </li>
