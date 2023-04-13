@@ -1,8 +1,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { FC } from 'react';
 
-const PortfolioItem = ({ title, backgroundImage, alt, projectUrl }) => {
+type PortfolioItemProps = {
+  title: string;
+  backgroundImage: any;
+  alt: string;
+  projectUrl: string;
+};
+
+const PortfolioItem: React.FC<PortfolioItemProps> = ({
+  title,
+  backgroundImage,
+  alt,
+  projectUrl,
+}) => {
   return (
     <div className='relative flex items-center justify-center w-[320px] h-[320px] shadow-xl shadow-gray-400 rounded-xl p-4 m-4 group hover:bg-gradient-to-r from-[#004ab1] to-[#5c89c8] ease-in duration-700'>
       <Image
