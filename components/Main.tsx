@@ -25,6 +25,7 @@ const Main = (props: Props) => {
             <br />
             I&apos;m here to solve those problems for you.
           </p>
+          {/* social buttons here */}
         </div>
       </div>
     </div>
