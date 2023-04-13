@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 
 import logo from '../public/logo.png';
 
@@ -8,6 +8,12 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedin, FaShare } from 'react-icons/fa';
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
   return (
     <div className='fixed w-full h-20 shadow-xl z-[100]'>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
@@ -17,7 +23,6 @@ const Navbar = () => {
             alt='Clark Creative Services blue text logo'
             width={75}
             height={125}
-            className='bg-[#ecf0f3]'
           />
         </Link>
 
@@ -36,13 +41,21 @@ const Navbar = () => {
               <Link href={'/contact'}>Contact</Link>
             </li>
           </ul>
-          <div className='md:hidden'>
+          <div onClick={handleNav} className='md:hidden'>
             <AiOutlineMenu size={25} />
           </div>
         </div>
       </div>
-      <div className='fixed left-0 top-0 w-full h-screen bg-black/30'>
-        <div className='fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-300'>
+      <div
+        className={nav ? 'fixed left-0 top-0 w-full h-screen bg-black/30' : ''}
+      >
+        <div
+          className={
+            nav
+              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-200'
+              : 'fixed left-[-200%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-200'
+          }
+        >
           <div>
             <div className='flex w-full items-center justify-between'>
               <Image
@@ -51,7 +64,10 @@ const Navbar = () => {
                 width={87}
                 height={35}
               />
-              <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+              <div
+                onClick={handleNav}
+                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+              >
                 <AiOutlineClose />
               </div>
             </div>
