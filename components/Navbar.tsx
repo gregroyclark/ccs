@@ -4,7 +4,8 @@ import React from 'react';
 
 import logo from '../public/logo.png';
 
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
+import { FaGithub, FaLinkedin, FaShare } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -62,19 +63,38 @@ const Navbar = () => {
           </div>
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
-              <li className='py-4 text-sm'>
+              <li className='py-3 text-sm'>
                 <Link href={'/'}>Home</Link>
               </li>
-              <li className='py-4 text-sm'>
+              <li className='py-3 text-sm'>
                 <Link href={'/'}>Services</Link>
               </li>
-              <li className='py-4 text-sm'>
+              <li className='py-3 text-sm'>
                 <Link href={'/'}>Work</Link>
               </li>
-              <li className='py-4 text-sm'>
+              <li className='py-3 text-sm'>
                 <Link href={'/'}>Contact</Link>
               </li>
             </ul>
+            <div className='pt-8'>
+              <p className='uppercase tracking-widest text-[#565e51]'>
+                Connect
+              </p>
+              <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <FaLinkedin />
+                </div>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <FaGithub />
+                </div>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <AiOutlineMail />
+                </div>
+                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <FaShare />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
