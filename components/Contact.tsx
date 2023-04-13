@@ -3,8 +3,9 @@ import React from 'react';
 
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedin, FaShare } from 'react-icons/fa';
-
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import contact from '../public/contact.jpg';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -94,9 +95,19 @@ const Contact = (props: Props) => {
                     rows={10}
                   />
                 </div>
+                <button className='w-full p-4 text-gray-100 mt-4'>
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
+        </div>
+        <div>
+          <Link href='/'>
+            <div>
+              <HiOutlineChevronDoubleUp />
+            </div>
+          </Link>
         </div>
       </div>
     </div>
