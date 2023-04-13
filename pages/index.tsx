@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>CCS - Clark Creative Services</title>
+        <title>Clark Creative Services - CCS</title>
         <meta
           name='description'
-          content='CCS - Clark Creative Services is a full service creative agency specializing in web design & development. Other services include marketing, content writing, and social media.'
+          content='Clark Creative Services (CCS) is a full service creative agency specializing in web design & development. Other services include marketing, content writing, and social media.'
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
