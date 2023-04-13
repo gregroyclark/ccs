@@ -15,7 +15,7 @@ export default function Home() {
         <title>Clark Creative Services - CCS</title>
         <meta
           name='description'
-          content='Clark Creative Services (CCS) is a full service creative agency specializing in web design & development. Other services include marketing, content writing, and social media.'
+          content='Clark Creative Services (CCS) is a full service creative agency specializing in web design & development. Other services include marketing, seo, content writing, event coordination, coaching, and social media.'
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
