@@ -32,20 +32,18 @@ const Contact = (props: Props) => {
               </div>
               <div>
                 <p className='uppercase pt-8'>connect with me</p>
-                <div>
-                  <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                      <FaLinkedin />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                      <FaGithub />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                      <AiOutlineMail />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                      <FaShare />
-                    </div>
+                <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaLinkedin />
+                  </div>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaGithub />
+                  </div>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <AiOutlineMail />
+                  </div>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaShare />
                   </div>
                 </div>
               </div>
