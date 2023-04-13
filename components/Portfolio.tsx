@@ -19,8 +19,17 @@ const Portfolio = () => {
               className='rounded-xl group-hover:opacity-10'
             />
             <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-              <h3>Boston Mountain Nurseries</h3>
-              <Link href={'https://bostonmountainnurseries.com'}></Link>
+              <h3 className='text-2xl text-white tracking-wider text-center'>
+                Boston Mountain Nurseries
+              </h3>
+              <Link
+                href={'https://bostonmountainnurseries.com'}
+                target='_blank'
+              >
+                <p className='text-center p-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
+                  Take a look
+                </p>
+              </Link>
             </div>
           </div>
         </div>
