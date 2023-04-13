@@ -92,12 +92,12 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className='py-3 text-sm'>
-                <Link onClick={handleNav} href={'/work'}>
+                <Link onClick={handleNav} href={'#work'}>
                   Work
                 </Link>
               </li>
               <li className='py-3 text-sm'>
-                <Link onClick={handleNav} href={'/contact'}>
+                <Link onClick={handleNav} href={'#contact'}>
                   Contact
                 </Link>
               </li>
