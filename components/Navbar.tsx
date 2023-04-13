@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+import logo from '../public/logo.png';
+
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
@@ -10,7 +12,7 @@ const Navbar = () => {
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href={'/'}>
           <Image
-            src='/../public/logo.png'
+            src={logo}
             alt='Clark Creative Services blue text logo'
             width={75}
             height={125}
@@ -43,7 +45,7 @@ const Navbar = () => {
           <div>
             <div>
               <Image
-                src={'/../public/logo.png'}
+                src={logo}
                 alt='Clark Creative Services blue text logo'
                 width={87}
                 height={35}
