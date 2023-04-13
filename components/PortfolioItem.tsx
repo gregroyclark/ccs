@@ -16,7 +16,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
   projectUrl,
 }) => {
   return (
-    <div className='relative flex items-center justify-center w-[400px] h-[400px] md:w-[360px] md:h-[360px] shadow-xl shadow-gray-400 rounded-xl p-4 m-4 group hover:bg-gradient-to-r from-[#004ab1] to-[#5c89c8] ease-in duration-700'>
+    <div className='relative flex items-center justify-center w-[360px] h-[360px] md:w-[300px] md:h-[300px] shadow-xl shadow-gray-400 rounded-xl p-4 m-4 group hover:bg-gradient-to-r from-[#004ab1] to-[#5c89c8] ease-in duration-700'>
       <Image
         src={backgroundImage}
         alt={alt}
