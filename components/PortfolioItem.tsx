@@ -4,7 +4,7 @@ import React from 'react';
 
 const PortfolioItem = ({ title, backgroundImage, alt, projectUrl }) => {
   return (
-    <div className='relative flex items-center justify-center w-[300px] h-[300px] shadow-xl shadow-gray-400 rounded-xl p-4 m-4 group hover:bg-gradient-to-r from-[#004ab1] to-[#5c89c8] ease-in duration-700'>
+    <div className='relative flex items-center justify-center w-[320px] h-[320px] shadow-xl shadow-gray-400 rounded-xl p-4 m-4 group hover:bg-gradient-to-r from-[#004ab1] to-[#5c89c8] ease-in duration-700'>
       <Image
         src={backgroundImage}
         alt={alt}
