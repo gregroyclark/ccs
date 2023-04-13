@@ -89,7 +89,10 @@ const Contact = (props: Props) => {
                 </div>
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Message</label>
-                  <textarea className='border-2 rounded-lg p-3 flex border-gray-300' />
+                  <textarea
+                    className='border-2 rounded-lg p-3 border-gray-300'
+                    rows={10}
+                  />
                 </div>
               </form>
             </div>
