@@ -12,7 +12,7 @@ const Portfolio = () => {
         <p className='text-xl tracking-widest uppercase'>Portfolio</p>
         <h2 className='py-4'>Some of my finest work</h2>
         <div className='grid md:grid-cols-2 gap-8'>
-          <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#0c4da8] to-[#0858c9]'>
+          <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#004ab1] to-[#5c89c8]'>
             <Image
               src={field}
               alt='Blackberry field with two rainbows'
