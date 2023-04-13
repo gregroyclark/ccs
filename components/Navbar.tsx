@@ -32,13 +32,13 @@ const Navbar = () => {
               <Link href={'/'}>Home</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href={'/services'}>Services</Link>
+              <Link href={'#services'}>Services</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href={'/work'}>Work</Link>
+              <Link href={'#work'}>Work</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href={'/contact'}>Contact</Link>
+              <Link href={'#contact'}>Contact</Link>
             </li>
           </ul>
           <div onClick={handleNav} className='md:hidden cursor-pointer'>
@@ -82,16 +82,24 @@ const Navbar = () => {
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
               <li className='py-3 text-sm'>
-                <Link href={'/'}>Home</Link>
+                <Link onClick={handleNav} href={'/'}>
+                  Home
+                </Link>
               </li>
               <li className='py-3 text-sm'>
-                <Link href={'/'}>Services</Link>
+                <Link onClick={handleNav} href={'#services'}>
+                  Services
+                </Link>
               </li>
               <li className='py-3 text-sm'>
-                <Link href={'/'}>Work</Link>
+                <Link onClick={handleNav} href={'/work'}>
+                  Work
+                </Link>
               </li>
               <li className='py-3 text-sm'>
-                <Link href={'/'}>Contact</Link>
+                <Link onClick={handleNav} href={'/contact'}>
+                  Contact
+                </Link>
               </li>
             </ul>
             <div className='pt-12'>
