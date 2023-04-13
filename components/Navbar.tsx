@@ -76,7 +76,7 @@ const Navbar = () => {
                 <Link href={'/'}>Contact</Link>
               </li>
             </ul>
-            <div className='pt-8'>
+            <div className='pt-12'>
               <p className='uppercase tracking-widest text-[#565e51]'>
                 Connect
               </p>
