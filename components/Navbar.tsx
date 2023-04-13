@@ -43,13 +43,19 @@ const Navbar = () => {
       <div className='fixed left-0 top-0 w-full h-screen bg-black/30'>
         <div className='fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-300'>
           <div>
-            <div>
+            <div className='flex w-full items-center justify-between'>
               <Image
                 src={logo}
                 alt='Clark Creative Services blue text logo'
                 width={87}
                 height={35}
               />
+              <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+                <AiOutlineClose />
+              </div>
+            </div>
+            <div className='border-b border-gray-300 my-4'>
+              <p>Solving your creative problems</p>
             </div>
           </div>
         </div>
