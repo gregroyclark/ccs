@@ -7,9 +7,7 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import contact from '../public/contact.jpg';
 import Link from 'next/link';
 
-type Props = {};
-
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-1 py-16 w-full'>
@@ -60,6 +58,7 @@ const Contact = (props: Props) => {
                   <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>Name</label>
                     <input
+                      name='name'
                       type='text'
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                     />
@@ -69,6 +68,7 @@ const Contact = (props: Props) => {
                       Phone Number
                     </label>
                     <input
+                      name='phone number'
                       type='text'
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                     />
@@ -77,6 +77,7 @@ const Contact = (props: Props) => {
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Email</label>
                   <input
+                    name='email'
                     type='email'
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                   />
@@ -84,6 +85,7 @@ const Contact = (props: Props) => {
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Subject</label>
                   <input
+                    name='subject'
                     type='text'
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                   />
@@ -91,6 +93,7 @@ const Contact = (props: Props) => {
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Message</label>
                   <textarea
+                    name='message'
                     className='border-2 rounded-lg p-3 border-gray-300'
                     rows={5}
                   />
