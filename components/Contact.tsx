@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedin, FaShare } from 'react-icons/fa';
@@ -8,6 +8,39 @@ import contact from '../public/contact.jpg';
 import Link from 'next/link';
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    // let isValidForm = handleValidation();
+
+    const res = await fetch('/api/sendgrid', {
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        phoneNumber: phoneNumber,
+        subject: subject,
+        message: message,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+    });
+
+    const { error } = await res.json();
+    if (error) {
+      console.log(error);
+      return;
+    }
+    console.log(name, phoneNumber, email, subject, message);
+  };
+
   return (
     <div id='contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-1 py-16 w-full'>
@@ -53,47 +86,78 @@ const Contact = () => {
 
           <div className='col-span-3 w-full shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                   <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>Name</label>
+                    <label htmlFor='name' className='uppercase text-sm py-2'>
+                      Name
+                    </label>
                     <input
                       name='name'
                       type='text'
+                      value={name}
+                      onChange={(e) => {
+                        setName(e.target.value);
+                      }}
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                     />
                   </div>
                   <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>
+                    <label
+                      htmlFor='phoneNumber'
+                      className='uppercase text-sm py-2'
+                    >
                       Phone Number
                     </label>
                     <input
                       name='phone number'
                       type='text'
+                      value={phoneNumber}
+                      onChange={(e) => {
+                        setPhoneNumber(e.target.value);
+                      }}
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                     />
                   </div>
                 </div>
                 <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>Email</label>
+                  <label htmlFor='email' className='uppercase text-sm py-2'>
+                    Email
+                  </label>
                   <input
                     name='email'
                     type='email'
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                   />
                 </div>
                 <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>Subject</label>
+                  <label htmlFor='subject' className='uppercase text-sm py-2'>
+                    Subject
+                  </label>
                   <input
                     name='subject'
                     type='text'
+                    value={subject}
+                    onChange={(e) => {
+                      setSubject(e.target.value);
+                    }}
                     className='border-2 rounded-lg p-3 flex border-gray-300'
                   />
                 </div>
                 <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>Message</label>
+                  <label htmlFor='message' className='uppercase text-sm py-2'>
+                    Message
+                  </label>
                   <textarea
                     name='message'
+                    value={message}
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
                     className='border-2 rounded-lg p-3 border-gray-300'
                     rows={5}
                   />
