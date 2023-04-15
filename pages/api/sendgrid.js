@@ -36,7 +36,7 @@ async function sendEmail(req, res) {
               <br>
               </div>
               <img src="${logo}" class="logo-image" style="height: 50px;width: 50px;border-radius: 5px;overflow: hidden;">
-              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Regards<br>Clark Creative Services<br><br>+91 9587738861</p>
+              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Grace & peace to you,<br>Clark Creative Services (CCS)<br>https://clarkcreativeservices.com<br>info@clarkcreativeservices.com</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
                 <a href="https://clarkcreativeservices.com/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Website</a>
                 <a href="https://proverbdesk.com/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Blog</a>
