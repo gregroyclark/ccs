@@ -186,9 +186,16 @@ const Contact = () => {
           </div>
         </div>
         <div className='flex justify-center py-12'>
-          <Link id='return-to-top' href='/'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <HiOutlineChevronDoubleUp size={30} className='text-[#004ab1]' />
+          <Link id='return-to-top-link' href='/'>
+            <div
+              id='return-to-top-div'
+              className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'
+            >
+              <HiOutlineChevronDoubleUp
+                id='return-to-top-icon'
+                size={30}
+                className='text-[#004ab1]'
+              />
             </div>
           </Link>
         </div>
