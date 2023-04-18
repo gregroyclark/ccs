@@ -58,9 +58,25 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className='py-2'>Clark Creative Services</h2>
-                <p>available for creative services</p>
-                <p className='py-4'>let&apos;s talk</p>
+                <h2 className='py-2'>How can we help?</h2>
+                <p>
+                  An introduction to your ideas & goals will help us serve you
+                  better.
+                </p>
+                <p className='py-4'>
+                  Please include a description of:
+                  <br />
+                  - any desired deliverables & project deadlines
+                  <br />
+                  - event occasion & location
+                  <br />
+                  - intended audience
+                  <br />
+                  - budget
+                  <br />
+                  - etc.
+                  <br />
+                </p>
               </div>
               <div>
                 <p className='uppercase pt-8'>connect with me</p>
