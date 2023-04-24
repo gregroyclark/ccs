@@ -3,7 +3,7 @@ import React from 'react';
 import PortfolioItem from './PortfolioItem';
 
 import field from '../public/projects/field.jpg';
-import noise from '../public/projects/noise.jpg';
+// import noise from '../public/projects/noise.jpg';
 
 const Portfolio = () => {
   return (
