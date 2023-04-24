@@ -14,7 +14,7 @@ const Services = () => {
   return (
     <div id='services' className='w-full lg:h-screen p-2'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center sm:h-full'>
-        <div className='mt-16'>
+        <div className='mt-24 md:mt-16'>
           <p className='text-xl tracking-widest uppercase'>Services</p>
           <h2></h2>
           <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-4'>
