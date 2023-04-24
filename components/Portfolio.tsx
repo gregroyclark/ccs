@@ -18,12 +18,12 @@ const Portfolio = () => {
             backgroundImage={field}
             projectUrl={'https://bostonmountainnurseries.com'}
           />
-          <PortfolioItem
+          {/* <PortfolioItem
             title='The Righteous Noise'
             alt='The Righteous Noise rock band logo'
             backgroundImage={noise}
             projectUrl={'https://therighteousnoise.com'}
-          />
+          /> */}
           {/* <PortfolioItem
             title='Brew Bees Coffee'
             alt='f'
