@@ -9,27 +9,29 @@ const Portfolio = () => {
   return (
     <div id='portfolio' className='w-full'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <p className='text-xl tracking-widest uppercase'>Portfolio</p>
-        <h2 className='py-4'>Some of my finest work</h2>
-        <div className='grid md:grid-cols-2 justify-center gap-8'>
-          <PortfolioItem
-            title='Boston Mountain Nurseries'
-            alt='Blackberry field'
-            backgroundImage={field}
-            projectUrl={'https://bostonmountainnurseries.com'}
-          />
-          {/* <PortfolioItem
+        <div className='mt-12'>
+          <p className='text-xl tracking-widest uppercase'>Portfolio</p>
+          <h2 className='py-4'>Some of my finest work</h2>
+          <div className='grid md:grid-cols-2 justify-center gap-8'>
+            <PortfolioItem
+              title='Boston Mountain Nurseries'
+              alt='Blackberry field'
+              backgroundImage={field}
+              projectUrl={'https://bostonmountainnurseries.com'}
+            />
+            {/* <PortfolioItem
             title='The Righteous Noise'
             alt='The Righteous Noise rock band logo'
             backgroundImage={noise}
             projectUrl={'https://therighteousnoise.com'}
           /> */}
-          {/* <PortfolioItem
+            {/* <PortfolioItem
             title='Brew Bees Coffee'
             alt='f'
             backgroundImage={field}
             projectUrl={'https://bostonmountainnurseries.com'}
           /> */}
+          </div>
         </div>
       </div>
     </div>
