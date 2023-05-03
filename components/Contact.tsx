@@ -81,7 +81,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className='uppercase pt-8'>connect with me</p>
-                  <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                  <div className='flex items-center justify-around my-4 w-full sm:w-[80%]'>
                     <a
                       href='https://linkedin.com/in/gregroyclark'
                       target='_blank'
