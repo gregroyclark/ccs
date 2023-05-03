@@ -90,11 +90,11 @@ const Contact = () => {
                         <FaLinkedin />
                       </div>
                     </a>
-                    <a href='https://github.com/gregroyclark' target='_blank'>
+                    {/* <a href='https://github.com/gregroyclark' target='_blank'>
                       <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                         <FaGithub />
                       </div>
-                    </a>
+                    </a> */}
                     <a href='mailto:info@clarkcreativeservices.com'>
                       <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                         <AiOutlineMail />
