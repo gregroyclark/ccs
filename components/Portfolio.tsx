@@ -3,7 +3,8 @@ import React from 'react';
 import PortfolioItem from './PortfolioItem';
 
 import field from '../public/projects/field.jpg';
-// import noise from '../public/projects/noise.jpg';
+import noise from '../public/projects/noise.jpg';
+import journal from '../public/projects/journal.jpg';
 
 const Portfolio = () => {
   return (
@@ -19,12 +20,18 @@ const Portfolio = () => {
               backgroundImage={field}
               projectUrl={'https://bostonmountainnurseries.com'}
             />
-            {/* <PortfolioItem
-            title='The Righteous Noise'
-            alt='The Righteous Noise rock band logo'
-            backgroundImage={noise}
-            projectUrl={'https://therighteousnoise.com'}
-          /> */}
+            <PortfolioItem
+              title='Proverb Desk'
+              alt='Proverb Desk journal & pen with coffee'
+              backgroundImage={journal}
+              projectUrl={'https://proverbdesk.com'}
+            />
+            <PortfolioItem
+              title='The Righteous Noise'
+              alt='The Righteous Noise rock band logo'
+              backgroundImage={noise}
+              projectUrl={'https://therighteousnoise.com'}
+            />
             {/* <PortfolioItem
             title='Brew Bees Coffee'
             alt='f'
