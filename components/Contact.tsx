@@ -13,32 +13,49 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     // let isValidForm = handleValidation();
+    try {
+      const res = await fetch('/api/sendgrid', {
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          phoneNumber: phoneNumber,
+          subject: subject,
+          message: message,
+        }),
+        // headers: {
+        //   'Content-Type': 'application/json',
+        //   Authorization: 'bearer',
+        //   'X-API-Key':
+        // },
+        method: 'POST',
+      });
+      console.log(res);
+      // const { error } = await res.json();
+      // if (error) {
+      //   console.log(error);
+      //   return;
+      // }
 
-    const res = await fetch('/api/sendgrid', {
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        phoneNumber: phoneNumber,
-        subject: subject,
-        message: message,
-      }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'POST',
-    });
-
-    const { error } = await res.json();
-    if (error) {
+      if (res.ok) {
+        setShowConfirmation(true);
+        setName('');
+        setPhoneNumber('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+      }
+      console.log(res);
+    } catch (error) {
       console.log(error);
-      return;
     }
-    console.log(name, phoneNumber, email, subject, message);
+
+    alert('Thank you, you will hear back soon!');
   };
 
   return (
@@ -194,6 +211,13 @@ const Contact = () => {
                     Send Message
                   </button>
                 </form>
+                {showConfirmation && (
+                  <div className='bg-green-200 p-4 rounded-lg mt-4'>
+                    <p className='text-green-800'>
+                      Thank you! Your message has been sent.
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           </div>
