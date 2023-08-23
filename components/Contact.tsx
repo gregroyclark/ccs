@@ -53,9 +53,10 @@ const Contact = () => {
       console.log(res);
     } catch (error) {
       console.log(error);
+    } finally {
     }
 
-    alert('Thank you, you will hear back soon!');
+    // alert('Thank you, you will hear back soon!');
   };
 
   return (
