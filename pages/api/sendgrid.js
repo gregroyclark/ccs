@@ -1,4 +1,6 @@
-// import sendgrid from '@sendgrid/mail';
+// using Twilio SendGrid's v3 Node.js Library
+// https://github.om/sendgrid/sendgrid-node.js
+
 import logo from '../../public/logo.png';
 const sendgrid = require('@sendgrid/mail');
 
