@@ -1,11 +1,12 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedin, FaShare } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+
 import contact from '../public/contact.jpg';
-import Link from 'next/link';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -28,10 +29,9 @@ const Contact = () => {
           subject: subject,
           message: message,
         }),
-
-        // headers: {
-        //   'Content-Type': 'application/json',
-        // },
+        headers: {
+          'Content-Type': 'application/json',
+        },
         method: 'POST',
       });
       console.log(res);
