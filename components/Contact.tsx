@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 import { AiOutlineMail } from 'react-icons/ai';
-import { FaGithub, FaLinkedin, FaShare } from 'react-icons/fa';
+import { FaLinkedin, FaShare } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import contact from '../public/contact.jpg';
 import Link from 'next/link';
