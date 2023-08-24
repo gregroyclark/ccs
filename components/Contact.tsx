@@ -28,19 +28,13 @@ const Contact = () => {
           subject: subject,
           message: message,
         }),
+
         // headers: {
         //   'Content-Type': 'application/json',
-        //   Authorization: 'bearer',
-        //   'X-API-Key':
         // },
         method: 'POST',
       });
       console.log(res);
-      // const { error } = await res.json();
-      // if (error) {
-      //   console.log(error);
-      //   return;
-      // }
 
       if (res.ok) {
         setShowConfirmation(true);
@@ -53,10 +47,7 @@ const Contact = () => {
       console.log(res);
     } catch (error) {
       console.log(error);
-    } finally {
     }
-
-    // alert('Thank you, you will hear back soon!');
   };
 
   return (
