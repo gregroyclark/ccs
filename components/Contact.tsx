@@ -44,7 +44,6 @@ const Contact = () => {
         // setSubject('');
         // setMessage('');
       }
-      console.log(res);
     } catch (error) {
       console.log(error);
     }
