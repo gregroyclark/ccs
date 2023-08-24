@@ -38,11 +38,11 @@ const Contact = () => {
 
       if (res.ok) {
         setShowConfirmation(true);
-        setName('');
-        setPhoneNumber('');
-        setEmail('');
-        setSubject('');
-        setMessage('');
+        // setName('');
+        // setPhoneNumber('');
+        // setEmail('');
+        // setSubject('');
+        // setMessage('');
       }
       console.log(res);
     } catch (error) {
