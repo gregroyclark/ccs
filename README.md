@@ -21,4 +21,7 @@ This app is built with Next.js & TailwindCSS.
 
 This project is deployed on the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
 
-# ccs
+# CCS
+
+View here:
+https://clarkcreativeservices.com
