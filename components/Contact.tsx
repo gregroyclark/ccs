@@ -87,7 +87,7 @@ const Contact = () => {
                     <br />
                   </p>
                 </div>
-                <div>
+                <div classname='text-sm'>
                   <p>*do not use this form to sell me your services.</p>
                 </div>
                 <div>
