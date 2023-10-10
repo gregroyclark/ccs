@@ -88,6 +88,12 @@ const Contact = () => {
                   </p>
                 </div>
                 <div>
+                  <p>
+                    *please do not use this form to sell me things.
+                  <br>
+                  </p>
+                </div>
+                <div>
                   <p className='uppercase pt-8'>connect with me</p>
                   <div className='flex items-center justify-around my-4 w-full sm:w-[80%]'>
                     <a
