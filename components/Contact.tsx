@@ -90,7 +90,6 @@ const Contact = () => {
                 <div>
                   <p>
                     *please do not use this form to sell me things.
-                  <br>
                   </p>
                 </div>
                 <div>
