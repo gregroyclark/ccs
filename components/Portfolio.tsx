@@ -20,12 +20,14 @@ const Portfolio = () => {
               backgroundImage={field}
               projectUrl={'https://bostonmountainnurseries.com'}
             />
+            {/*
             <PortfolioItem
               title='Proverb Desk'
               alt='Proverb Desk journal & pen with coffee'
               backgroundImage={journal}
               projectUrl={'https://proverbdesk.com'}
             />
+            */}
             <PortfolioItem
               title='The Righteous Noise'
               alt='The Righteous Noise rock band logo'
