@@ -78,7 +78,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+{/*             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
               <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
@@ -92,8 +92,8 @@ const Services = () => {
                   <h3>Marketing</h3>
                 </div>
               </div>
-            </div>
-            <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            </div> */}
+{/*             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
               <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
@@ -107,8 +107,8 @@ const Services = () => {
                   <h3>Events</h3>
                 </div>
               </div>
-            </div>
-            <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            </div> */}
+{/*             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
               <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
                   <Image
@@ -122,8 +122,8 @@ const Services = () => {
                   <h3>Social Media</h3>
                 </div>
               </div>
-            </div>
-            <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            </div> */}
+{/*             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
               <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
                   <Image src={coach} alt={'Coaching'} width={64} height={64} />
@@ -133,7 +133,7 @@ const Services = () => {
                   <p>Coming soon!</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
