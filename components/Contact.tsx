@@ -89,7 +89,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className='text-sm'>
-                    *please do not use this form to sell me things.
+                    *do not contact me about white labeling or outsourcing my work to your company.
                   </p>
                 </div>
                 <div>
